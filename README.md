@@ -6,7 +6,14 @@ Steps to run:
   ```
   docker-compose up
   ```
-* send POST request to http://localhost:3102/perform
+* send POST request to http://localhost:3102/perform with the following body:
+  ```
+  {
+	  "perform": {
+		  "job_id": 4
+	  }
+  }
+  ```
 ---
 
 * expected:
