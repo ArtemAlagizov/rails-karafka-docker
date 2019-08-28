@@ -1,5 +1,7 @@
 # rails-karafka-docker
 
+[karafka-issue](https://github.com/karafka/karafka/issues/541)
+
 Steps to run:
 * clone the repo
 * run 
