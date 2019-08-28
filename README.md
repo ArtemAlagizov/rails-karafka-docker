@@ -13,7 +13,7 @@ Steps to run:
    * "consumed" message is logged
    * error is thrown
 * reality:
-   * nothing is logged
+   * nothing is logged from consumer
    * no errors are thrown
 ---
 the logs show successful posting message but not consuming:
