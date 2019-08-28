@@ -33,7 +33,7 @@ karafka setup is done here:
 * [/rail-service/config/environment.rb](rails-service/config/environment.rb)
 * [/rails-service/config/initializers/water_drop.rb](/rails-service/config/initializers/water_drop.rb)
 * [/rails-service/app/consumers/application_consumer.rb](/rails-service/app/consumers/application_consumer.rb)
-* [/rails-service/app/consumers/jobs_consumer.rb](/app/consumers/jobs_consumer.rb)
+* [/rails-service/app/consumers/jobs_consumer.rb](/rails-service/app/consumers/jobs_consumer.rb)
 * [/rails-service/app/responders/application_responder.rb](/rails-service/app/responders/application_responder.rb) 
 * [/rails-service/app/responders/jobs_responder.rb](/rails-service/app/responders/jobs_responder.rb)
 * [/rails-service/karafka.rb](/rails-service/karafka.rb)
