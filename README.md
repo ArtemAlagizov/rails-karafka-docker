@@ -3,9 +3,9 @@
 Steps to run:
 * clone the repo
 * run 
-```
-docker-compose up
-```
+  ```
+  docker-compose up
+  ```
 * send POST request to http://localhost:3102/perform
 ---
 
