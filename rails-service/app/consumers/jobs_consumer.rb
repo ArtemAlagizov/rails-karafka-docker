@@ -2,6 +2,6 @@ class JobsConsumer < ApplicationConsumer
   def consume
     puts "consumed"
 
-    raise "error"
+    raise Exception.new('error')
   end
 end

@@ -19,7 +19,7 @@ services:
     build:
       context: ./rails-service
       dockerfile: Dockerfile
-    command: bundle exec rails s -p 80 -b '0.0.0.0'
+    command: bash -c "bundle exec karafka server --daemon && bundle exec rails s -p 80 -b '0.0.0.0'"
     volumes:
       - ./rails-service:/rails-service
       - type: tmpfs
