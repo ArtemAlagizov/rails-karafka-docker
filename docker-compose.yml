@@ -1,0 +1,32 @@
+version: '3.2'
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    depends_on:
+      - "zookeeper"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  rails-service:
+    build:
+      context: ./rails-service
+      dockerfile: Dockerfile
+    command: bundle exec rails s -p 80 -b '0.0.0.0'
+    volumes:
+      - ./rails-service:/rails-service
+      - type: tmpfs
+        target: /rails-service/tmp/pids/
+    depends_on:
+      - "kafka"
+    ports:
+      - "3102:80"
+
+
