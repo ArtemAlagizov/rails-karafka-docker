@@ -135,7 +135,7 @@ GEM
     nokogiri (1.12.5-x64-mingw32)
       racc (~> 1.4)
     null-logger (0.1.5)
-    puma (4.3.11)
+    puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
